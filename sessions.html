@@ -13,8 +13,8 @@
 
 <title>Working sessions</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -234,7 +242,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -245,35 +253,35 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="orga.html">
-    <span class="fas fa-sitemap"></span>
+    <span class="fa fa-sitemap"></span>
      
     Orga
   </a>
 </li>
 <li>
   <a href="calendar.html">
-    <span class="fas fa-calendar"></span>
+    <span class="fa fa-calendar"></span>
      
     Calendar
   </a>
 </li>
 <li>
   <a href="sessions.html">
-    <span class="fas fa-calendar"></span>
+    <span class="fa fa-calendar"></span>
      
     Sessions
   </a>
 </li>
 <li>
   <a href="members.html">
-    <span class="fas fa-user"></span>
+    <span class="fa fa-user"></span>
      
     Members
   </a>
 </li>
 <li>
   <a href="https://r-in-grenoble.github.io/blog/">
-    <span class="fas fa-rss"></span>
+    <span class="fa fa-rss"></span>
      
     Blog
   </a>
@@ -281,26 +289,26 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:matthieu.rolland@univ-grenoble-alpes.fr">
-    <span class="fas fa-envelope-o"></span>
+  <a href="mailto:MJ.ROLLAND@gmail.com">
+    <span class="fa fa-envelope-o"></span>
      
   </a>
 </li>
 <li>
   <a href="https://twitter.com/hashtag/rusersgrenoble?src=hash">
-    <span class="fas fa-twitter"></span>
+    <span class="fa fa-twitter"></span>
      
   </a>
 </li>
 <li>
   <a href="https://github.com/r-in-grenoble/r-in-grenoble.github.io">
-    <span class="fas fa-github"></span>
+    <span class="fa fa-github"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.youtube.com/channel/UCA2w7SQxsYH0NKGS8vmAqbg">
-    <span class="fas fa-youtube"></span>
+    <span class="fa fa-youtube"></span>
      
   </a>
 </li>
@@ -318,32 +326,32 @@ $(document).ready(function () {
 </div>
 
 
-<p>Next session: <strong>Time series analysis, June 24th 2021 at 5PM on Zoom</strong>.</p>
-<!-- Registration link and ZOOM link will be posted soon. -->
-<p>Registration to the event <a href="https://www.eventbrite.com/e/r-in-grenoble-time-series-tickets-159887665311">here</a>.</p>
-<p>Link to Zoom <a href="https://univ-grenoble-alpes-fr.zoom.us/j/99312884863?pwd=b3RrdEFqdWp5dzdLVzN2Vk94ZytKQT09">here</a>.</p>
-<!-- Attendance is totally free but registration is mandatory and is on a first come first serve basis.  -->
+<p>Next session: <strong>TBA</strong></p>
+<p>Registration link will be posted soon.</p>
+<!-- Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-time-series-tickets-159887665311). -->
+<!-- Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/99312884863?pwd=b3RrdEFqdWp5dzdLVzN2Vk94ZytKQT09). -->
+<p>Attendance is totally free but registration is mandatory and is on a first come first serve basis.</p>
 <p>You can subscribe to our emailing list on the following link: <a href="https://listes.univ-grenoble-alpes.fr/sympa/subscribe/r-in-grenoble?previous_action=info">r-in-grenoble emailing list</a>.</p>
 <p>You can checkout our YouTube channel <a href="https://www.youtube.com/channel/UCA2w7SQxsYH0NKGS8vmAqbg">here</a>.</p>
 <div id="help-us-communicate" class="section level3">
 <h3>Help us communicate</h3>
 <p>Please talk about our R group with your colleagues.</p>
-<p>You can also print <a href="Poster%202020-2021.pdf">this poster</a> and put it up somewhere at work.</p>
+<p>You can also print <a href="Poster%202020-2021.pdf">this poster</a> [TODO: UPDATE] and put it up somewhere at work.</p>
 </div>
 <div id="join-our-r-working-sessions-in-grenoble" class="section level3">
 <h3>Join our R working sessions in Grenoble</h3>
-<p>We organise monthly working sessions on thursdays at 5PM, at the <a href="https://r-in-grenoble.github.io/members.html">IMAG building</a>. <strong>Due to COVID-19 restrictions all sessions to come and until further notice will be held by ZOOM</strong>.</p>
+<p>We organise monthly working sessions on thursdays at 17:30, at the <a href="https://r-in-grenoble.github.io/members.html">IMAG building</a>. <!-- **Due to COVID-19 restrictions all sessions to come and until further notice will be held by ZOOM**. --></p>
 <p>Please find the guidelines for these sessions:</p>
 <ul>
 <li><p>Everyone is welcome (beginners to advanced R users, just bring your laptop).</p></li>
 <li><p>Presentations/tutorials will last 30 to 60 min, on some R topics that can be useful to many people, with practical examples.</p></li>
 <li><p>We want to have a lightning talk (5 min) after the main session so that people can quickly present how they use R in their work (or a specific package, etc.).</p></li>
 <li><p>During the second part of the session, people could ask and answer some questions about specific problems they encounter when coding in R.</p></li>
-<li><p>If you wish to share your R experience during a working session and/or to co-animate a working session, please <a href="mailto:matthieu.rolland@univ-grenoble-alpes.fr">contact us</a>.</p></li>
+<li><p>If you wish to share your R experience during a working session and/or to co-animate a working session, please <a href="mailto:MJ.ROLLAND@gmail.com">contact us</a>.</p></li>
 </ul>
 </div>
-<div id="schedule-of-2020-2021" class="section level3">
-<h3>Schedule of 2020-2021</h3>
+<div id="schedule-of-2022-2023" class="section level3">
+<h3>Schedule of 2022-2023</h3>
 <p><em>Click on the title to see the session description</em></p>
 <style type="text/css">
 .schedule {
@@ -411,115 +419,93 @@ $(document).ready(main);
 <div class="schedule">
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">October 22, 2020</div>
+<div class="left-date">October 20, 2022</div>
 <div class="center-title">
-<i>Organising exams in R</i>
+<i>Publication ready tables with {gtsummary}</i>
 </div>
-<div class="right-authors">PJ-F. Coeurjolly</div>
+<div class="right-authors">Matthieu ROLLAND</div>
 </div>
-<ul class="workshops">Package {exams} enables creating questionnaires that combine program output, graphs, etc in an automatised and dynamic fashion. They may be exported in many different formats: html, pdf, nops and most intresting xml. Xml is compatible with moodle which allows to reproducibly generate random questions in R and create a great number of different exams and make them an online moodle exam.</ul>
+<ul class="workshops">TBA</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">November 26, 2020</div>
+<div class="left-date">November 10, 2022</div>
 <div class="center-title">
-<i>Collect and use open access World Bank data to know your country + Flash talk: Contribute to the response to COVID-19</i>
+<i>Advanced data visualisation with {ggplot2}</i>
 </div>
-<div class="right-authors">M. Rolland, B. Thiago Tomio</div>
+<div class="right-authors">Nicolas JOVANOVIC</div>
 </div>
-<ul class="workshops">Package {WDI} enables exploring 40 different datasets hosted by the World Bank. The database World Development Indicators (‘WDI’) contains 1,600 time series indicators for 217 economies and more than 40 country groups. For many series, data goes back more than 50 years. The package is very useful to explore the development of the countries. We will download and plot data together during this session.</ul>
+<ul class="workshops">TBA</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">December 17, 2020</div>
+<div class="left-date">December 01, 2022</div>
 <div class="center-title">
-<i>Alternatives to Rstudio</i>
+<i>Using Git with R</i>
 </div>
-<div class="right-authors">N. Gusarov</div>
+<div class="right-authors">Maxime JAUNATRE</div>
 </div>
-<ul class="workshops">RStudio is the most widely used IDE designed to optimize the workflow with R language. However, there exists many alternatives designed for more specific use cases. Among the most popular, there are VS-Code, Jupyter, Atom and many others. What are the advantages they offer? Can they be more useful than RStudio?</ul>
+<ul class="workshops">TBA</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">January 14, 2021</div>
+<div class="left-date">January 05, 2023</div>
 <div class="center-title">
-<i>Using UGA’s Ciment servers with R</i>
+<i>Data manipulation with {dplyr} and {data.table}</i>
 </div>
-<div class="right-authors">M. Gueguen, P-A. Bouttier</div>
+<div class="right-authors">Nicolas JOVANOVIC</div>
 </div>
-<ul class="workshops">In this session we will start with a general overview of UGA (University of Grenoble) severs by P-A. Bouttier from GRICAD (Grenoble’s infrastructure for intensive computing). He will present what these servers are, what they can be used for (scientific computing, data management, etc) and the different services provided by GRICAD to the Grenoble scientific community. 
-
-Then in the main part of the presentation, M. Gueguen will present in which situations you may want to use such servers and how to do so in R. The presentation will be illustrated by several examples.</ul>
+<ul class="workshops">TBA</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">February 25, 2021</div>
+<div class="left-date">January 26, 2023</div>
 <div class="center-title">
-<i>Machine learning</i>
+<i>Dynamic web applications with {shiny}</i>
 </div>
-<div class="right-authors">C. Gain</div>
+<div class="right-authors">Ronaldo SILVA</div>
 </div>
-<ul class="workshops">In this presentation, we will mainly focus on the supervised part of the machine learning. 
-More specifically, we will see how to use Deep Learning in R in order to solve supervised learning task.
-The presentation will first introduce briefly what supervised learning is and the conceptual idea behind Deep Learning.
-We will then present how to use deep learning in R using the framework Keras and solving image recognition task.</ul>
+<ul class="workshops">TBA</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">March 25, 2021</div>
+<div class="left-date">March 02, 2023</div>
 <div class="center-title">
-<i>Data visualisation with {ggplot2}</i>
+<i>Litterate programming with {Rmarkdown} and {Quarto}</i>
 </div>
-<div class="right-authors">M. Rolland</div>
+<div class="right-authors">Nikita GUSAROV</div>
 </div>
-<ul class="workshops">CANCELLED</ul>
+<ul class="workshops">TBA</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">April 29, 2021</div>
+<div class="left-date">April 06, 2023</div>
 <div class="center-title">
-<i>Data manipulation with packages {dplyr} and {data.table}</i>
+<i>Performance of R code</i>
 </div>
-<div class="right-authors">P. Jedynak &amp; M. Rolland</div>
+<div class="right-authors">Florian PRIVÉ</div>
 </div>
-<ul class="workshops">CANCELLED</ul>
+<ul class="workshops">TBA</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">May 06, 2021</div>
+<div class="left-date">May 04, 2023</div>
 <div class="center-title">
-<i>Version control and git for beginners</i>
+<i>Surprise talk (TBD)</i>
 </div>
-<div class="right-authors">P. Jedynak, M. Rolland</div>
+<div class="right-authors">Romain FRANÇOIS</div>
 </div>
-<ul class="workshops">Git is a version control system whose original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way.  
-Git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analytical projects, which often consist of data, figures, reports, and, yes, source code.  
-In this presentation aimed at beginners we will try to give you an understanding on what git is, how it is integrated in Rstudio and how it can help you make your projects more reproducible, enable you to share your code with the world and collaborate in a seamless manner.  
-(abstract strongly inspired by the intro from happygitwithr.com)</ul>
+<ul class="workshops">TBA</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
-<div class="left-date">May 25, 2021</div>
+<div class="left-date">June 01, 2023</div>
 <div class="center-title">
-<i>Building dashboards in R/shiny (and improve them with logs and user feedback)</i>
+<i>Workflow management with {targets}</i>
 </div>
-<div class="right-authors">M. Kaufman, N. Ricci</div>
+<div class="right-authors">Matthieu ROLLAND</div>
 </div>
-<ul class="workshops">The main goal of this seminar is to demonstrate how R/Shiny app developers can collect data from the visitors of their app (such as logs or feedback) to improve it. 
-We will use as example the CaDyCo project, a dynamic and collaborative cartography project hosted by USMB and UGA.</ul>
-</div>
-<div class="limit">
-<div class="workshops-button">
-<div class="left-date">June 24, 2021</div>
-<div class="center-title">
-<i>Time series</i>
-</div>
-<div class="right-authors">A. Zaher</div>
-</div>
-<ul class="workshops">
-Time series data correspond to a sequence taken at successive and equidistant points in time, and their applications include several domains in which we deal with this temporal dimension. In this session, we will give an introduction to the general process of analyzing a time series data in R, starting with the visualization through different methods and packages, then we will discuss the processing stage, and finally arrive at the modeling and forecasting step.
-
-The most relevant used packages are: tsdl for uploading time series data; zoo and xts for reading and arranging data as time series; lattice, latticeExtra for static graphics; RColorBrewer for defining color palettes; and packages dygraphs, highcharter, and plotly, based on the htmlwidgets framework, for interactive graphics.</ul>
+<ul class="workshops">TBA</ul>
 </div>
 </div>
 <p><br></p>
@@ -527,6 +513,13 @@ The most relevant used packages are: tsdl for uploading time series data; zoo an
 <div id="materials-from-previous-sessions" class="section level3">
 <h3>Materials from previous sessions</h3>
 <div id="section" class="section level4">
+<h4>2022 - 2023</h4>
+</div>
+<div id="section-1" class="section level4">
+<h4>2021 - 2022</h4>
+<p>Unfortunately, the group was inactive during that period.</p>
+</div>
+<div id="section-2" class="section level4">
 <h4>2020 - 2021</h4>
 <ul>
 <li><p>Time Series: <a href="https://github.com/zaher-stat/R_in_Grenoble-Time_Series_Talk">tutorial</a></p></li>
@@ -539,7 +532,7 @@ The most relevant used packages are: tsdl for uploading time series data; zoo an
 <li><p><a href="presentation/rexam2slides.pdf">Organising exams in R</a></p></li>
 </ul>
 </div>
-<div id="section-1" class="section level4">
+<div id="section-3" class="section level4">
 <h4>2019 - 2020</h4>
 <ul>
 <li><p><a href="presentation/20200130_r_meeting_codalab.pdf">Organising a data challenge in R</a></p></li>
@@ -548,7 +541,7 @@ The most relevant used packages are: tsdl for uploading time series data; zoo an
 <li><p><a href="https://annakrystalli.me/talks/r-in-repro-research.html">Reproducible research in R</a></p></li>
 </ul>
 </div>
-<div id="section-2" class="section level4">
+<div id="section-4" class="section level4">
 <h4>2018 - 2019</h4>
 <ul>
 <li><p><a href="https://privefl.github.io/R-presentation/ggplot2.html">Data visualization with {ggplot2}</a></p></li>
@@ -562,7 +555,7 @@ The most relevant used packages are: tsdl for uploading time series data; zoo an
 <li><p><a href="http://bit.ly/RUGgre11">What R can do for you</a></p></li>
 </ul>
 </div>
-<div id="section-3" class="section level4">
+<div id="section-5" class="section level4">
 <h4>2017 - 2018</h4>
 <ul>
 <li><p><a href="https://privefl.github.io/R-presentation/rmarkdown-websites.html">Make your personal webpage with R</a></p></li>

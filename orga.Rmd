@@ -2,6 +2,8 @@
 title: "Organization"
 ---
 
+[TODO: UPDATE]
+
 **The first goal of this R group is that people meet and learn from each other.**
 
 In this page, we will detail how we will organize the R group and events. This organization has been approved during the first formal meeting but can change with time (any good idea is welcome!).
@@ -40,7 +42,7 @@ The main events we want to organize are monthly working sessions of 2 hours (16h
 
 - Every presentation could be completed with a blog post hosted on the [blog of the R group](blog/).
 
-- We could also host some blog post without having to make a presentation. If you want to share a post, please [contact us](mailto:matthieu.rolland@univ-grenoble-alpes.fr). 
+- We could also host some blog post without having to make a presentation. If you want to share a post, please [contact us](mailto:florian.prive.21@gmail.com). 
 
 The blog will be relayed by [R-bloggers](https://www.r-bloggers.com/), which is read by thousands of people.
 
@@ -54,7 +56,7 @@ The blog will be relayed by [R-bloggers](https://www.r-bloggers.com/), which is 
 
 ### Get some help
 
-- [Join the (french-speaking) slack of R users](https://join.slack.com/t/r-grrr/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM).
+- [Join the (French-speaking) slack of R users](https://join.slack.com/t/r-grrr/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM).
 
 - A [map and table with members](members.html) of the R group is available. One could contact people with some specific skills (referenced in the table). Don't hesitate to register by following the quick guidelines!
 

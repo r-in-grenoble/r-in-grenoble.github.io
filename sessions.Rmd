@@ -2,15 +2,15 @@
 title: "Working sessions"
 ---
 
-Next session: **Time series analysis, June 24th 2021 at 5PM on Zoom**. 
+Next session: **TBA**
 
-<!-- Registration link and ZOOM link will be posted soon. -->
+Registration link will be posted soon.
 
-Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-time-series-tickets-159887665311).
+<!-- Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-time-series-tickets-159887665311). -->
 
-Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/99312884863?pwd=b3RrdEFqdWp5dzdLVzN2Vk94ZytKQT09).
+<!-- Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/99312884863?pwd=b3RrdEFqdWp5dzdLVzN2Vk94ZytKQT09). -->
 
-<!-- Attendance is totally free but registration is mandatory and is on a first come first serve basis.  -->
+Attendance is totally free but registration is mandatory and is on a first come first serve basis.
 
 You can subscribe to our emailing list on the following link: [r-in-grenoble emailing list](https://listes.univ-grenoble-alpes.fr/sympa/subscribe/r-in-grenoble?previous_action=info).
 
@@ -20,11 +20,12 @@ You can checkout our YouTube channel [here](https://www.youtube.com/channel/UCA2
 
 Please talk about our R group with your colleagues. 
 
-You can also print [this poster](Poster 2020-2021.pdf) and put it up somewhere at work.
+You can also print [this poster](Poster 2020-2021.pdf) [TODO: UPDATE] and put it up somewhere at work.
 
 ### Join our R working sessions in Grenoble
 
-We organise monthly working sessions on thursdays at 5PM, at the [IMAG building](https://r-in-grenoble.github.io/members.html). **Due to COVID-19 restrictions all sessions to come and until further notice will be held by ZOOM**.
+We organise monthly working sessions on thursdays at 17:30, at the [IMAG building](https://r-in-grenoble.github.io/members.html). 
+<!-- **Due to COVID-19 restrictions all sessions to come and until further notice will be held by ZOOM**. -->
 
 Please find the guidelines for these sessions:
     
@@ -36,9 +37,9 @@ Please find the guidelines for these sessions:
 
 - During the second part of the session, people could ask and answer some questions about specific problems they encounter when coding in R.
 
-- If you wish to share your R experience during a working session and/or to co-animate a working session, please [contact us](mailto:matthieu.rolland@univ-grenoble-alpes.fr).
+- If you wish to share your R experience during a working session and/or to co-animate a working session, please [contact us](mailto:MJ.ROLLAND@gmail.com).
 
-### Schedule of 2020-2021
+### Schedule of 2022-2023
 
 *Click on the title to see the session description*
 
@@ -51,68 +52,27 @@ library(htmltools)
 ```
 
 ```{r, warning=FALSE}
-program <- tribble(
-  
-  ~Date, ~Title, ~Description, ~Authors,
-  
-  "22/10/2020", "Organising exams in R", 
-  "Package {exams} enables creating questionnaires that combine program output, graphs, etc in an automatised and dynamic fashion. They may be exported in many different formats: html, pdf, nops and most intresting xml. Xml is compatible with moodle which allows to reproducibly generate random questions in R and create a great number of different exams and make them an online moodle exam.", 
-  "PJ-F. Coeurjolly",
-  
-  "26/11/2020", "Collect and use open access World Bank data to know your country + Flash talk: Contribute to the response to COVID-19", 
-  "Package {WDI} enables exploring 40 different datasets hosted by the World Bank. The database World Development Indicators (‘WDI’) contains 1,600 time series indicators for 217 economies and more than 40 country groups. For many series, data goes back more than 50 years. The package is very useful to explore the development of the countries. We will download and plot data together during this session.", 
-  "M. Rolland, B. Thiago Tomio",
-  
-  "17/12/2020", "Alternatives to Rstudio", 
-  "RStudio is the most widely used IDE designed to optimize the workflow with R language. However, there exists many alternatives designed for more specific use cases. Among the most popular, there are VS-Code, Jupyter, Atom and many others. What are the advantages they offer? Can they be more useful than RStudio?",
-  "N. Gusarov",
-  
-  "14/01/2021", "Using UGA’s Ciment servers with R", 
-  "In this session we will start with a general overview of UGA (University of Grenoble) severs by P-A. Bouttier from GRICAD (Grenoble’s infrastructure for intensive computing). He will present what these servers are, what they can be used for (scientific computing, data management, etc) and the different services provided by GRICAD to the Grenoble scientific community. 
+program <- tibble::tribble(
+         ~Date,            ~Authors,                ~Affiliation,                                                ~Title, ~Description,
+  "20/10/2022",  "Matthieu ROLLAND", "World Health Organisation",           "Publication ready tables with {gtsummary}",        NA,
+  "10/11/2022", "Nicolas JOVANOVIC",                    "INSERM",          "Advanced data visualisation with {ggplot2}",        NA,
+   "1/12/2022",   "Maxime JAUNATRE",                     "INRAE",                                    "Using Git with R",        NA,
+    "5/1/2023", "Nicolas JOVANOVIC",                    "INSERM",     "Data manipulation with {dplyr} and {data.table}",        NA,
+   "26/1/2023",     "Ronaldo SILVA", "World Health Organisation",               "Dynamic web applications with {shiny}",        NA,
+    "2/3/2023",    "Nikita GUSAROV",                      "GAEL", "Litterate programming with {Rmarkdown} and {Quarto}",        NA,
+    "6/4/2023",     "Florian PRIVÉ",    "Aarhus University (DK)",                               "Performance of R code",        NA,
+    "4/5/2023",   "Romain FRANÇOIS",                   "RStudio",                                                 "Surprise talk (TBD)",        NA,
+    "1/6/2023",  "Matthieu ROLLAND", "World Health Organisation",                  "Workflow management with {targets}",        NA
+)
 
-Then in the main part of the presentation, M. Gueguen will present in which situations you may want to use such servers and how to do so in R. The presentation will be illustrated by several examples.", 
-"M. Gueguen, P-A. Bouttier",
-
-  
-  "25/02/2021", "Machine learning", 
-  "In this presentation, we will mainly focus on the supervised part of the machine learning. 
-More specifically, we will see how to use Deep Learning in R in order to solve supervised learning task.
-The presentation will first introduce briefly what supervised learning is and the conceptual idea behind Deep Learning.
-We will then present how to use deep learning in R using the framework Keras and solving image recognition task.", 
-  "C. Gain",
-
-  "25/03/2021", "Data visualisation with {ggplot2}", "CANCELLED", 
-  "M. Rolland",
-  
-  "29/04/2021", "Data manipulation with packages {dplyr} and {data.table}",
-  "CANCELLED", 
-  "P. Jedynak & M. Rolland",
-
-  "06/05/2021", "Version control and git for beginners", 
-  "Git is a version control system whose original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way.  
-Git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analytical projects, which often consist of data, figures, reports, and, yes, source code.  
-In this presentation aimed at beginners we will try to give you an understanding on what git is, how it is integrated in Rstudio and how it can help you make your projects more reproducible, enable you to share your code with the world and collaborate in a seamless manner.  
-(abstract strongly inspired by the intro from happygitwithr.com)", 
-  "P. Jedynak, M. Rolland",
-
-  "25/05/2021", "Building dashboards in R/shiny (and improve them with logs and user feedback)", 
-  "The main goal of this seminar is to demonstrate how R/Shiny app developers can collect data from the visitors of their app (such as logs or feedback) to improve it. 
-We will use as example the CaDyCo project, a dynamic and collaborative cartography project hosted by USMB and UGA.", 
-  "M. Kaufman, N. Ricci",
-
-  "24/06/2021", "Time series", "
-Time series data correspond to a sequence taken at successive and equidistant points in time, and their applications include several domains in which we deal with this temporal dimension. In this session, we will give an introduction to the general process of analyzing a time series data in R, starting with the visualization through different methods and packages, then we will discuss the processing stage, and finally arrive at the modeling and forecasting step.
-
-The most relevant used packages are: tsdl for uploading time series data; zoo and xts for reading and arranging data as time series; lattice, latticeExtra for static graphics; RColorBrewer for defining color palettes; and packages dygraphs, highcharter, and plotly, based on the htmlwidgets framework, for interactive graphics.", "A. Zaher"
-
-) %>%
-  mutate(Date = dmy(Date)) 
 
 #stopifnot(all(wday(program$Date) == 5)) # Thursdays (begin with Sundays)
           
 program <- program %>%
+  mutate(Date = dmy(Date)) %>%
   arrange(Date) %>%
-  mutate(Date = format(Date, format = "%B %d, %Y"))
+  mutate(Date = format(Date, format = "%B %d, %Y"),
+         Description = ifelse(is.na(Description), "TBA", Description))
 ```
 
 
@@ -205,6 +165,12 @@ div(
 <br>
 
 ### Materials from previous sessions
+
+#### 2022 - 2023
+
+#### 2021 - 2022
+
+Unfortunately, the group was inactive during that period.
 
 #### 2020 - 2021
 

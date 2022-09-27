@@ -2,37 +2,40 @@
 title: "Get Help & Give Help!"
 ---
 
-When you have a problem in R:
+When you have a problem in R, you can:
 
-1. Read the documentation: use `?` or, equivalently, `help`.
-2. Google it (someone probably already had the same problem and someone else probably told him a way to fix it, probably on [StackOverflow](https://stackoverflow.com/)).
-3. Ask it on Stack Overflow (SO) after checking that your question has not already been asked.
-4. Come to one of our working sessions to get help and give help about R code. During these sessions, one could help you to post your first question on SO.
+- Read the documentation: use `?` or, equivalently, `help`.
+- Google it (someone probably already had the same problem and someone else probably told him a way to fix it, probably on [StackOverflow](https://stackoverflow.com/)).
+- Ask it on Stack Overflow (SO) after checking that your question has not already been asked.
+- Come to one of our working sessions to get help and give help about R code. During these sessions, one could help you to post your first question on SO.
+- [Join the Slack of the French-speaking R community](https://join.slack.com/t/r-grrr/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM)
 
 Some guidelines and resources are available at [SO](https://stackoverflow.com/tags/r/info).
 
-We also propose to reference all the unanswered [r] questions of our members so that we can all answer them. For that, you just have to give your SO ID in your member infos. If you want to add one, please [email me](mailto::florian.prive@univ-grenoble-alpes.fr).
+Also check https://privefl.github.io/advr38book/good-practices.html#getting-help.
 
-### Unanswered [r] questions of Grenoble useRs
+<!-- We also propose to reference all the unanswered [r] questions of our members so that we can all answer them. For that, you just have to give your SO ID in your member infos. If you want to add one, please [email me](mailto::florian.prive@univ-grenoble-alpes.fr). -->
 
-```{r, include=FALSE}
-# devtools::install_github("dgrtwo/stackr")
-library(tidyverse)
+<!-- ### Unanswered [r] questions of Grenoble useRs -->
 
-links <- googlesheets::gs_key("1WyfmLfoAQUP2iRogqcOfYA9Hum7DT0BcVyTtei_6Xjw", 
-                                lookup = TRUE, visibility = "private") %>%
-  googlesheets::gs_read() %>% 
-  drop_na(SO_ID) %>%
-  pull(SO_ID) %>%
-  stackr::stack_users("questions") %>%
-  select(tags, is_answered, link, title) %>%
-  mutate(tags = strsplit(tags, split = ",", fixed = TRUE)) %>%
-  filter(map_lgl(tags, ~is.element("r", .x)), !is_answered) %>%
-  transmute(paste0("<a href='", link, "' target='_blank'>", title, "</a>")) %>%
-  pull()
-```
+<!-- ```{r, include=FALSE} -->
+<!-- # devtools::install_github("dgrtwo/stackr") -->
+<!-- library(tidyverse) -->
 
-```{r, echo=FALSE, results='asis'}
-for (link in sample(links)) cat("-", link, "\n\n")
-```
+<!-- links <- googlesheets::gs_key("1WyfmLfoAQUP2iRogqcOfYA9Hum7DT0BcVyTtei_6Xjw",  -->
+<!--                                 lookup = TRUE, visibility = "private") %>% -->
+<!--   googlesheets::gs_read() %>%  -->
+<!--   drop_na(SO_ID) %>% -->
+<!--   pull(SO_ID) %>% -->
+<!--   stackr::stack_users("questions") %>% -->
+<!--   select(tags, is_answered, link, title) %>% -->
+<!--   mutate(tags = strsplit(tags, split = ",", fixed = TRUE)) %>% -->
+<!--   filter(map_lgl(tags, ~is.element("r", .x)), !is_answered) %>% -->
+<!--   transmute(paste0("<a href='", link, "' target='_blank'>", title, "</a>")) %>% -->
+<!--   pull() -->
+<!-- ``` -->
+
+<!-- ```{r, echo=FALSE, results='asis'} -->
+<!-- for (link in sample(links)) cat("-", link, "\n\n") -->
+<!-- ``` -->
 
