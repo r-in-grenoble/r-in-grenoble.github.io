@@ -10,19 +10,16 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 
 library(dplyr)
-# devtools::install_github("privefl/googlesheets")
-library(googlesheets)
+# install.packages("googlesheets4")
+library(googlesheets4)
 # install.packages(c("leaflet", "DT"))
 library(leaflet)
 library(DT)
 ```
 
 ```{r, include=FALSE}
-members <- gs_key("1WyfmLfoAQUP2iRogqcOfYA9Hum7DT0BcVyTtei_6Xjw", 
-                  lookup = TRUE, visibility = "private") %>%
-  gs_read() %>% 
-  tidyr::unite_(col = "Name", from = c("First name", "Last name"),
-                sep = " ", remove = TRUE) %>%
+members <- read_sheet("1WyfmLfoAQUP2iRogqcOfYA9Hum7DT0BcVyTtei_6Xjw") %>% 
+  tidyr::unite(`First name`, `Last name`, col = "Name", sep = " ") %>%
   mutate(
     Name = if_else(is.na(Website), Name, 
                    paste0("<a href='", Website, "' target='_blank'>", Name, "</a>")),
