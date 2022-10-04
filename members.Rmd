@@ -74,8 +74,9 @@ suppressWarnings(
 
 ```{r}
 # display table
-datatable(select(members, c(Name, Institution, Field, Keywords, Status)), 
-              rownames = FALSE, escape = FALSE)
+members %>% 
+  select(Name, Institution, Field, Keywords, Status) %>% 
+  datatable(rownames = FALSE, escape = FALSE)
 ```
 
 
