@@ -54,7 +54,7 @@ library(htmltools)
 ```{r, warning=FALSE}
 program <- tibble::tribble(
          ~Date,            ~Authors,                ~Affiliation,                                                ~Title, ~Description,
-  "20/10/2022",  "Matthieu ROLLAND", "World Health Organisation",           "Publication ready tables with {gtsummary}",        NA,
+  "20/10/2022",  "Matthieu ROLLAND", "World Health Organisation",           "Publication ready tables with {gtsummary}",        "The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables using R. This package can summarize datasets, regression models, and more, using sensible defaults with highly customizable capabilities.",
   "10/11/2022", "Nicolas JOVANOVIC",                    "INSERM",          "Advanced data visualisation with {ggplot2}",        NA,
    "1/12/2022",   "Maxime JAUNATRE",                     "INRAE",                                    "Using Git with R",        NA,
     "5/1/2023", "Nicolas JOVANOVIC",                    "INSERM",     "Data manipulation with {dplyr} and {data.table}",        NA,
