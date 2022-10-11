@@ -2,15 +2,14 @@
 title: "Working sessions"
 ---
 
-Next session: **TBA**
+**Next session**: Thursday October 20, 2022 @IMAG (salle de réunion) at 17:30
 
-Registration link will be posted soon.
+<!-- Registration link will be posted soon. -->
 
-<!-- Registration to the event [here](https://www.eventbrite.com/e/r-in-grenoble-time-series-tickets-159887665311). -->
+Registration to the event [here](https://www.eventbrite.com/e/billets-r-in-grenoble-publication-ready-tables-with-gtsummary-439574147107).
+Attendance is totally free but **registration is mandatory** and is on a first-come, first-serve basis.
 
-<!-- Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/99312884863?pwd=b3RrdEFqdWp5dzdLVzN2Vk94ZytKQT09). -->
-
-Attendance is totally free but registration is mandatory and is on a first come first serve basis.
+Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/93497058691?pwd=UW12OTlvM3dWOU9adkE4ZHJwbGFzdz09), for those who cannot join in-person but are still interested in seeing the talk. Please only register if you plan to attend in-person.
 
 You can subscribe to our emailing list on the following link: [r-in-grenoble emailing list](https://listes.univ-grenoble-alpes.fr/sympa/subscribe/r-in-grenoble?previous_action=info).
 
@@ -18,13 +17,13 @@ You can checkout our YouTube channel [here](https://www.youtube.com/channel/UCA2
 
 ### Help us communicate
 
-Please talk about our R group with your colleagues. 
+Please talk about our R group with your colleagues. Tell them to register to the mailing list. 
 
-You can also print [this poster](Poster 2020-2021.pdf) [TODO: UPDATE] and put it up somewhere at work.
+You can also **print [this poster](r-in-gre_program_2022-2023.pdf) and put it up somewhere at work**.
 
 ### Join our R working sessions in Grenoble
 
-We organise monthly working sessions on thursdays at 17:30, at the [IMAG building](https://r-in-grenoble.github.io/members.html). 
+We organise monthly working sessions on Thursdays at 17:30, at the [IMAG building](https://r-in-grenoble.github.io/members.html). 
 <!-- **Due to COVID-19 restrictions all sessions to come and until further notice will be held by ZOOM**. -->
 
 Please find the guidelines for these sessions:
@@ -54,7 +53,7 @@ library(htmltools)
 ```{r, warning=FALSE}
 program <- tibble::tribble(
          ~Date,            ~Authors,                ~Affiliation,                                                ~Title, ~Description,
-  "20/10/2022",  "Matthieu ROLLAND", "World Health Organisation",           "Publication ready tables with {gtsummary}",        "The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables using R. This package can summarize datasets, regression models, and more, using sensible defaults with highly customizable capabilities.",
+  "20/10/2022",  "Matthieu ROLLAND", "World Health Organisation",           "Publication ready tables with {gtsummary}",        "The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables using R. This package can summarize datasets, regression models, and more, using sensible defaults with highly customizable capabilities. This session will be a very straightforward and hands on talk, presenting the {gtsummary} package that can be useful for any level of R user, wanting to easily and reproducibly produce nice looking tables that follow journal standards in many different formats (html, rtf, etc). The aim will be for attendees to understand the basics of the package, but we will also try to dig a little deeper in the structure of a gtsummary object and learn how to customize tables to fit your specific needs.",
   "10/11/2022", "Nicolas JOVANOVIC",                    "INSERM",          "Advanced data visualisation with {ggplot2}",        NA,
    "1/12/2022",   "Maxime JAUNATRE",                     "INRAE",                                    "Using Git with R",        NA,
     "5/1/2023", "Nicolas JOVANOVIC",                    "INSERM",     "Data manipulation with {dplyr} and {data.table}",        NA,
