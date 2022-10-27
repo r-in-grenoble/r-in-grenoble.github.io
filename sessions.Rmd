@@ -2,11 +2,11 @@
 title: "Working sessions"
 ---
 
-**Next session**: TBA
+<!-- **Next session**: TBA -->
+
+**Next session**: Thursday November 10, 2022 @IMAG at 17:30
 
 Registration link will be posted soon.
-
-<!-- **Next session**: Thursday October 20, 2022 @IMAG (salle de réunion) at 17:30 -->
 
 <!-- Registration to the event [here](https://www.eventbrite.com/e/billets-r-in-grenoble-publication-ready-tables-with-gtsummary-439574147107). Attendance is totally free but **registration is mandatory** and is on a first-come, first-serve basis. -->
 
@@ -55,7 +55,7 @@ library(htmltools)
 program <- tibble::tribble(
          ~Date,            ~Authors,                ~Affiliation,                                                ~Title, ~Description,
   "20/10/2022",  "Matthieu ROLLAND", "World Health Organisation",           "Publication ready tables with {gtsummary}",        "The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables using R. This package can summarize datasets, regression models, and more, using sensible defaults with highly customizable capabilities. This session will be a very straightforward and hands on talk, presenting the {gtsummary} package that can be useful for any level of R user, wanting to easily and reproducibly produce nice looking tables that follow journal standards in many different formats (html, rtf, etc). The aim will be for attendees to understand the basics of the package, but we will also try to dig a little deeper in the structure of a gtsummary object and learn how to customize tables to fit your specific needs.",
-  "10/11/2022", "Nicolas JOVANOVIC",                    "INSERM",          "Advanced data visualisation with {ggplot2}",        NA,
+  "10/11/2022", "Nicolas JOVANOVIC",                    "INSERM",          "Advanced data visualisation with {ggplot2}",        "The {ggplot2} package is the perfect solution for making elegant and comprehensible graphics with a very short amount of code lines. Using the “Grammar of Graphics” as its core principle, this package provides a lot of easy to understand tools to help R users of any level to quickly and effortlessly produce publication-ready graphics. In this session, after a brief presentation of ggplot2, we will try to understand the “grammar” part of a ggplot2’s plot. Understanding this allow the user to create any plot fairly easily, because they know how each block works and interact with one another.",
    "1/12/2022",   "Maxime JAUNATRE",                     "INRAE",                                    "Using Git with R",        NA,
     "5/1/2023", "Nicolas JOVANOVIC",                    "INSERM",     "Data manipulation with {dplyr} and {data.table}",        NA,
    "26/1/2023",     "Ronaldo SILVA", "World Health Organisation",               "Dynamic web applications with {shiny}",        NA,
