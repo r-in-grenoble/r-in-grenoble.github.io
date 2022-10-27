@@ -4,13 +4,14 @@ title: "Working sessions"
 
 <!-- **Next session**: TBA -->
 
-**Next session**: Thursday November 10, 2022 @IMAG at 17:30
+**Next session**: Thursday November 10, 2022 @IMAG (salle de séminaire) at 17:30
 
-Registration link will be posted soon.
+<!-- Registration link will be posted soon. -->
 
-<!-- Registration to the event [here](https://www.eventbrite.com/e/billets-r-in-grenoble-publication-ready-tables-with-gtsummary-439574147107). Attendance is totally free but **registration is mandatory** and is on a first-come, first-serve basis. -->
+Registration to the event [here](https://www.eventbrite.fr/e/billets-r-in-grenoble-34-advanced-data-visualisation-with-ggplot2-ggplotly-453021719157). Attendance is totally free but **registration is mandatory** and is on a first-come, first-serve basis.
 
-Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/93497058691?pwd=UW12OTlvM3dWOU9adkE4ZHJwbGFzdz09), for those who cannot join in-person but are still interested in seeing the talk. Please only register if you plan to attend in-person.
+No Zoom this time.
+<!-- Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/93497058691?pwd=UW12OTlvM3dWOU9adkE4ZHJwbGFzdz09), for those who cannot join in-person but are still interested in seeing the talk. Please only register if you plan to attend in-person. -->
 
 You can subscribe to our emailing list on the following link: [r-in-grenoble emailing list](https://listes.univ-grenoble-alpes.fr/sympa/subscribe/r-in-grenoble?previous_action=info).
 
