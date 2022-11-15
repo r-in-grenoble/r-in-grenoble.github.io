@@ -4,11 +4,11 @@ title: "Working sessions"
 
 <!-- **Next session**: TBA -->
 
-**Next session**: Thursday November 10, 2022 @IMAG (salle de séminaire) at 17:30
+**Next session**: Thursday December 1, 2022 @IMAG (salle de réunion) at 17:30
 
 <!-- Registration link will be posted soon. -->
 
-Registration to the event [here](https://www.eventbrite.fr/e/billets-r-in-grenoble-34-advanced-data-visualisation-with-ggplot2-ggplotly-453021719157). Attendance is totally free but **registration is mandatory** and is on a first-come, first-serve basis.
+Registration to the event [here](https://www.eventbrite.com/e/billets-r-in-grenoble-35-using-git-with-r-467884554297). Attendance is totally free but **registration is mandatory** and is on a first-come, first-serve basis.
 
 No Zoom this time.
 <!-- Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/93497058691?pwd=UW12OTlvM3dWOU9adkE4ZHJwbGFzdz09), for those who cannot join in-person but are still interested in seeing the talk. Please only register if you plan to attend in-person. -->
@@ -57,7 +57,7 @@ program <- tibble::tribble(
          ~Date,            ~Authors,                ~Affiliation,                                                ~Title, ~Description,
   "20/10/2022",  "Matthieu ROLLAND", "World Health Organisation",           "Publication ready tables with {gtsummary}",        "The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables using R. This package can summarize datasets, regression models, and more, using sensible defaults with highly customizable capabilities. This session will be a very straightforward and hands on talk, presenting the {gtsummary} package that can be useful for any level of R user, wanting to easily and reproducibly produce nice looking tables that follow journal standards in many different formats (html, rtf, etc). The aim will be for attendees to understand the basics of the package, but we will also try to dig a little deeper in the structure of a gtsummary object and learn how to customize tables to fit your specific needs.",
   "10/11/2022", "Nicolas JOVANOVIC",                    "INSERM",          "Advanced data visualisation with {ggplot2}",        "The {ggplot2} package is the perfect solution for making elegant and comprehensible graphics with a very short amount of code lines. Using the “Grammar of Graphics” as its core principle, this package provides a lot of easy to understand tools to help R users of any level to quickly and effortlessly produce publication-ready graphics. In this session, after a brief presentation of ggplot2, we will try to understand the “grammar” part of a ggplot2’s plot. Understanding this allow the user to create any plot fairly easily, because they know how each block works and interact with one another.",
-   "1/12/2022",   "Maxime JAUNATRE",                     "INRAE",                                    "Using Git with R",        NA,
+   "1/12/2022",   "Maxime JAUNATRE",                     "INRAE",                                    "Using Git with R",        "Git is a version control system independent from R, it provides a neat way to stop the spread of old scripts sent by e-mail, enhances scientific reproductibility and provides a framework to collaborate on writing code with other people. This software can be used by every R-User, within Rstudio or using a command line tool, at any step of a project or package development. This session will present the core principles when managing code files with Git, and why it may save you time when working in team. At the end of this session you will be able to use Git for saving your work and share it easily online on GitHub/GitLab.  This may even be your first step in understanding how to contribute to your most loved open-source package on GitHub/GitLab.",
     "5/1/2023", "Nicolas JOVANOVIC",                    "INSERM",     "Data manipulation with {dplyr} and {data.table}",        NA,
    "26/1/2023",     "Ronaldo SILVA", "World Health Organisation",               "Dynamic web applications with {shiny}",        NA,
     "2/3/2023",    "Nikita GUSAROV",                      "GAEL", "Litterate programming with {Rmarkdown} and {Quarto}",        NA,

@@ -13,7 +13,7 @@
 
 <title>Working sessions</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -180,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -189,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -327,27 +320,49 @@ $(document).ready(function () {
 
 
 <!-- **Next session**: TBA -->
-<p><strong>Next session</strong>: Thursday November 10, 2022 <span class="citation">@IMAG</span> (salle de séminaire) at 17:30</p>
+<p><strong>Next session</strong>: Thursday December 1, 2022 <span
+class="citation">@IMAG</span> (salle de réunion) at 17:30</p>
 <!-- Registration link will be posted soon. -->
-<p>Registration to the event <a href="https://www.eventbrite.fr/e/billets-r-in-grenoble-34-advanced-data-visualisation-with-ggplot2-ggplotly-453021719157">here</a>. Attendance is totally free but <strong>registration is mandatory</strong> and is on a first-come, first-serve basis.</p>
-<p>No Zoom this time. <!-- Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/93497058691?pwd=UW12OTlvM3dWOU9adkE4ZHJwbGFzdz09), for those who cannot join in-person but are still interested in seeing the talk. Please only register if you plan to attend in-person. --></p>
-<p>You can subscribe to our emailing list on the following link: <a href="https://listes.univ-grenoble-alpes.fr/sympa/subscribe/r-in-grenoble?previous_action=info">r-in-grenoble emailing list</a>.</p>
-<p>You can checkout our YouTube channel <a href="https://www.youtube.com/channel/UCA2w7SQxsYH0NKGS8vmAqbg">here</a>.</p>
+<p>Registration to the event <a
+href="https://www.eventbrite.com/e/billets-r-in-grenoble-35-using-git-with-r-467884554297">here</a>.
+Attendance is totally free but <strong>registration is
+mandatory</strong> and is on a first-come, first-serve basis.</p>
+<p>No Zoom this time.
+<!-- Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/93497058691?pwd=UW12OTlvM3dWOU9adkE4ZHJwbGFzdz09), for those who cannot join in-person but are still interested in seeing the talk. Please only register if you plan to attend in-person. --></p>
+<p>You can subscribe to our emailing list on the following link: <a
+href="https://listes.univ-grenoble-alpes.fr/sympa/subscribe/r-in-grenoble?previous_action=info">r-in-grenoble
+emailing list</a>.</p>
+<p>You can checkout our YouTube channel <a
+href="https://www.youtube.com/channel/UCA2w7SQxsYH0NKGS8vmAqbg">here</a>.</p>
 <div id="help-us-communicate" class="section level3">
 <h3>Help us communicate</h3>
-<p>Please talk about our R group with your colleagues. Tell them to register to the mailing list.</p>
-<p>You can also <strong>print <a href="r-in-gre_program_2022-2023.pdf">this poster</a> and put it up somewhere at work</strong>.</p>
+<p>Please talk about our R group with your colleagues. Tell them to
+register to the mailing list.</p>
+<p>You can also <strong>print <a
+href="r-in-gre_program_2022-2023.pdf">this poster</a> and put it up
+somewhere at work</strong>.</p>
 </div>
-<div id="join-our-r-working-sessions-in-grenoble" class="section level3">
+<div id="join-our-r-working-sessions-in-grenoble"
+class="section level3">
 <h3>Join our R working sessions in Grenoble</h3>
-<p>We organise monthly working sessions on Thursdays at 17:30, at the <a href="https://r-in-grenoble.github.io/members.html">IMAG building</a>. <!-- **Due to COVID-19 restrictions all sessions to come and until further notice will be held by ZOOM**. --></p>
+<p>We organise monthly working sessions on Thursdays at 17:30, at the <a
+href="https://r-in-grenoble.github.io/members.html">IMAG building</a>.
+<!-- **Due to COVID-19 restrictions all sessions to come and until further notice will be held by ZOOM**. --></p>
 <p>Please find the guidelines for these sessions:</p>
 <ul>
-<li><p>Everyone is welcome (beginners to advanced R users, just bring your laptop).</p></li>
-<li><p>Presentations/tutorials will last 30 to 60 min, on some R topics that can be useful to many people, with practical examples.</p></li>
-<li><p>We want to have a lightning talk (5 min) after the main session so that people can quickly present how they use R in their work (or a specific package, etc.).</p></li>
-<li><p>During the second part of the session, people could ask and answer some questions about specific problems they encounter when coding in R.</p></li>
-<li><p>If you wish to share your R experience during a working session and/or to co-animate a working session, please <a href="mailto:MJ.ROLLAND@gmail.com">contact us</a>.</p></li>
+<li><p>Everyone is welcome (beginners to advanced R users, just bring
+your laptop).</p></li>
+<li><p>Presentations/tutorials will last 30 to 60 min, on some R topics
+that can be useful to many people, with practical examples.</p></li>
+<li><p>We want to have a lightning talk (5 min) after the main session
+so that people can quickly present how they use R in their work (or a
+specific package, etc.).</p></li>
+<li><p>During the second part of the session, people could ask and
+answer some questions about specific problems they encounter when coding
+in R.</p></li>
+<li><p>If you wish to share your R experience during a working session
+and/or to co-animate a working session, please <a
+href="mailto:MJ.ROLLAND@gmail.com">contact us</a>.</p></li>
 </ul>
 </div>
 <div id="schedule-of-2022-2023" class="section level3">
@@ -445,7 +460,7 @@ $(document).ready(main);
 </div>
 <div class="right-authors">Maxime JAUNATRE</div>
 </div>
-<ul class="workshops">TBA</ul>
+<ul class="workshops">Git is a version control system independent from R, it provides a neat way to stop the spread of old scripts sent by e-mail, enhances scientific reproductibility and provides a framework to collaborate on writing code with other people. This software can be used by every R-User, within Rstudio or using a command line tool, at any step of a project or package development. This session will present the core principles when managing code files with Git, and why it may save you time when working in team. At the end of this session you will be able to use Git for saving your work and share it easily online on GitHub/GitLab.  This may even be your first step in understanding how to contribute to your most loved open-source package on GitHub/GitLab.</ul>
 </div>
 <div class="limit">
 <div class="workshops-button">
@@ -515,7 +530,9 @@ $(document).ready(main);
 <div id="section" class="section level4">
 <h4>2022 - 2023</h4>
 <ul>
-<li>Publication ready tables with {gtsummary}: <a href="http://www.danieldsjoberg.com/gtsummary-weill-cornell-presentation/">slides</a>, <a href="https://www.youtube.com/watch?v=VUeYRfHJrHU">video</a></li>
+<li>Publication ready tables with {gtsummary}: <a
+href="http://www.danieldsjoberg.com/gtsummary-weill-cornell-presentation/">slides</a>,
+<a href="https://www.youtube.com/watch?v=VUeYRfHJrHU">video</a></li>
 </ul>
 </div>
 <div id="section-1" class="section level4">
@@ -525,52 +542,107 @@ $(document).ready(main);
 <div id="section-2" class="section level4">
 <h4>2020 - 2021</h4>
 <ul>
-<li><p>Time Series: <a href="https://github.com/zaher-stat/R_in_Grenoble-Time_Series_Talk">tutorial</a></p></li>
-<li><p>Building dashboards in R/shiny (and improve them with logs and user feedback): <a href="presentation/Cadyco_R_in_Grenoble_2021-05-25_v1.pdf">slides</a>, <a href="presentation/export_Rdata_25_May">data</a></p></li>
-<li><p>Git in R for beginners: <a href="https://www.youtube.com/watch?v=EYHNuljz7Fo">video</a>, <a href="presentation/git-github/git_for_beginners.html">slides</a></p></li>
-<li><p>Machine learning in R: <a href="https://www.youtube.com/watch?v=AkWb-toK1gE">video</a></p></li>
-<li><p>Using UGA servers with R: <a href="https://bouttiep.gricad-pages.univ-grenoble-alpes.fr/slides/20210114_group-r.html">GRICAD slides</a>, <a href="presentation/RinGrenoble_RandCIMENT_20210114_GUEGUEN.pdf">Servers with R slides</a>, <a href="https://www.youtube.com/watch?v=Nido4_bZ3SE">video</a></p></li>
-<li><p>Alternatives to Rstudio: <a href="presentation/rstudio_alternatives.pdf">slides</a>, <a href="https://youtu.be/UzjCy6cyRiI">video</a></p></li>
-<li><p>Collect and use open access World Bank data to know your country: <a href="https://bttomio.github.io/slides/WDI/Slides.html">slides</a>, <a href="https://www.youtube.com/watch?v=vDfZ_Vxzgeo">video</a></p></li>
-<li><p><a href="presentation/rexam2slides.pdf">Organising exams in R</a></p></li>
+<li><p>Time Series: <a
+href="https://github.com/zaher-stat/R_in_Grenoble-Time_Series_Talk">tutorial</a></p></li>
+<li><p>Building dashboards in R/shiny (and improve them with logs and
+user feedback): <a
+href="presentation/Cadyco_R_in_Grenoble_2021-05-25_v1.pdf">slides</a>,
+<a href="presentation/export_Rdata_25_May">data</a></p></li>
+<li><p>Git in R for beginners: <a
+href="https://www.youtube.com/watch?v=EYHNuljz7Fo">video</a>, <a
+href="presentation/git-github/git_for_beginners.html">slides</a></p></li>
+<li><p>Machine learning in R: <a
+href="https://www.youtube.com/watch?v=AkWb-toK1gE">video</a></p></li>
+<li><p>Using UGA servers with R: <a
+href="https://bouttiep.gricad-pages.univ-grenoble-alpes.fr/slides/20210114_group-r.html">GRICAD
+slides</a>, <a
+href="presentation/RinGrenoble_RandCIMENT_20210114_GUEGUEN.pdf">Servers
+with R slides</a>, <a
+href="https://www.youtube.com/watch?v=Nido4_bZ3SE">video</a></p></li>
+<li><p>Alternatives to Rstudio: <a
+href="presentation/rstudio_alternatives.pdf">slides</a>, <a
+href="https://youtu.be/UzjCy6cyRiI">video</a></p></li>
+<li><p>Collect and use open access World Bank data to know your country:
+<a href="https://bttomio.github.io/slides/WDI/Slides.html">slides</a>,
+<a href="https://www.youtube.com/watch?v=vDfZ_Vxzgeo">video</a></p></li>
+<li><p><a href="presentation/rexam2slides.pdf">Organising exams in
+R</a></p></li>
 </ul>
 </div>
 <div id="section-3" class="section level4">
 <h4>2019 - 2020</h4>
 <ul>
-<li><p><a href="presentation/20200130_r_meeting_codalab.pdf">Organising a data challenge in R</a></p></li>
-<li><p><a href="https://www.barelysignificant.com/slides/RGUG2019">An introduction to Bayesian multilevel models using R, brms, and Stan</a></p></li>
-<li><p>Spatial data with packages {sf} and {raster}: <a href="https://ihough.github.io/talk_2019-10_geospatial/talk_2019-10_geospatial.html#1">Presentation</a>; <a href="https://github.com/ihough/talk_2019-10_geospatial/blob/master/mapping_demo.R">R script</a></p></li>
-<li><p><a href="https://annakrystalli.me/talks/r-in-repro-research.html">Reproducible research in R</a></p></li>
+<li><p><a href="presentation/20200130_r_meeting_codalab.pdf">Organising
+a data challenge in R</a></p></li>
+<li><p><a href="https://www.barelysignificant.com/slides/RGUG2019">An
+introduction to Bayesian multilevel models using R, brms, and
+Stan</a></p></li>
+<li><p>Spatial data with packages {sf} and {raster}: <a
+href="https://ihough.github.io/talk_2019-10_geospatial/talk_2019-10_geospatial.html#1">Presentation</a>;
+<a
+href="https://github.com/ihough/talk_2019-10_geospatial/blob/master/mapping_demo.R">R
+script</a></p></li>
+<li><p><a
+href="https://annakrystalli.me/talks/r-in-repro-research.html">Reproducible
+research in R</a></p></li>
 </ul>
 </div>
 <div id="section-4" class="section level4">
 <h4>2018 - 2019</h4>
 <ul>
-<li><p><a href="https://privefl.github.io/R-presentation/ggplot2.html">Data visualization with {ggplot2}</a></p></li>
-<li><p><a href="presentation/dplyr.html">Data manipulation with package {dplyr}</a></p></li>
-<li><p><a href="http://privefl.github.io/R-presentation/rmarkdown.html">R Markdown</a></p></li>
-<li><p><a href="https://magrichard.github.io/good_coding_practices/rpresentation.html">Good practice for writing R code and R packages</a></p></li>
-<li><p>Deep Learning with package {keras}: <a href="presentation/R_in_Grenoble_RPres.zip">presentation</a> and <a href="presentation/keras.html">exercise</a> (<a href="presentation/keras.Rmd">.Rmd</a>)</p></li>
-<li><p><a href="presentation/drake.pdf">Manage your workflow with package {drake}</a></p></li>
+<li><p><a
+href="https://privefl.github.io/R-presentation/ggplot2.html">Data
+visualization with {ggplot2}</a></p></li>
+<li><p><a href="presentation/dplyr.html">Data manipulation with package
+{dplyr}</a></p></li>
+<li><p><a
+href="http://privefl.github.io/R-presentation/rmarkdown.html">R
+Markdown</a></p></li>
+<li><p><a
+href="https://magrichard.github.io/good_coding_practices/rpresentation.html">Good
+practice for writing R code and R packages</a></p></li>
+<li><p>Deep Learning with package {keras}: <a
+href="presentation/R_in_Grenoble_RPres.zip">presentation</a> and <a
+href="presentation/keras.html">exercise</a> (<a
+href="presentation/keras.Rmd">.Rmd</a>)</p></li>
+<li><p><a href="presentation/drake.pdf">Manage your workflow with
+package {drake}</a></p></li>
 <li><p><a href="https://t.co/7Wq3MfH6B9">Linear models in R</a></p></li>
-<li><p><a href="http://bit.ly/RUGgre12">Image processing with package {imager}</a></p></li>
-<li><p><a href="http://bit.ly/RUGgre11">What R can do for you</a></p></li>
+<li><p><a href="http://bit.ly/RUGgre12">Image processing with package
+{imager}</a></p></li>
+<li><p><a href="http://bit.ly/RUGgre11">What R can do for
+you</a></p></li>
 </ul>
 </div>
 <div id="section-5" class="section level4">
 <h4>2017 - 2018</h4>
 <ul>
-<li><p><a href="https://privefl.github.io/R-presentation/rmarkdown-websites.html">Make your personal webpage with R</a></p></li>
-<li><p><a href="https://privefl.github.io/R-presentation/bigstatsr.html">Out-of-memory matrices</a></p></li>
+<li><p><a
+href="https://privefl.github.io/R-presentation/rmarkdown-websites.html">Make
+your personal webpage with R</a></p></li>
+<li><p><a
+href="https://privefl.github.io/R-presentation/bigstatsr.html">Out-of-memory
+matrices</a></p></li>
 <li><p><a href="session-parallel.zip">Parallel computing</a></p></li>
-<li><p><a href="https://privefl.github.io/R-presentation/Rcpp.html">{Rcpp}</a></p></li>
-<li><p><a href="https://jarbel.github.io/Rgoodpractice/rpresentation.html">Best coding practices</a></p></li>
-<li><p><a href="https://privefl.github.io/R-presentation/rstudio-git.html">RStudio and Git</a></p></li>
-<li><p><a href="http://www-leca.ujf-grenoble.fr/pageperso/boyerfr/ESPACE-PERSO/TP.zip">Geographical Information Systems</a></p></li>
-<li><p><a href="http://www.gipsa-lab.grenoble-inp.fr/~sophie.achard/Tutorial_brainwaver/tutorial_practice_graph_html.html">Network analysis with {igraph}</a></p></li>
-<li><p><a href="https://privefl.github.io/R-presentation/ggplot2.html">Visualization with {ggplot2}</a></p></li>
-<li><p><a href="https://github.com/fchuffar/intro_r">An introduction to R</a></p></li>
+<li><p><a
+href="https://privefl.github.io/R-presentation/Rcpp.html">{Rcpp}</a></p></li>
+<li><p><a
+href="https://jarbel.github.io/Rgoodpractice/rpresentation.html">Best
+coding practices</a></p></li>
+<li><p><a
+href="https://privefl.github.io/R-presentation/rstudio-git.html">RStudio
+and Git</a></p></li>
+<li><p><a
+href="http://www-leca.ujf-grenoble.fr/pageperso/boyerfr/ESPACE-PERSO/TP.zip">Geographical
+Information Systems</a></p></li>
+<li><p><a
+href="http://www.gipsa-lab.grenoble-inp.fr/~sophie.achard/Tutorial_brainwaver/tutorial_practice_graph_html.html">Network
+analysis with {igraph}</a></p></li>
+<li><p><a
+href="https://privefl.github.io/R-presentation/ggplot2.html">Visualization
+with {ggplot2}</a></p></li>
+<li><p><a href="https://github.com/fchuffar/intro_r">An introduction to
+R</a></p></li>
 </ul>
 </div>
 </div>
