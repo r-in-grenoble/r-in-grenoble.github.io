@@ -1,4 +1,5 @@
 library(googlesheets4)
+gs4_auth("florian.prive.21@gmail.com")
 
 members_to_add <- read_sheet("1qdG7PPlRCAU8L6Hhq1D2zT0q9LWDUzBfq7mIzz_6Dm8",
                              skip = 6, n_max = 100)[-1, ]

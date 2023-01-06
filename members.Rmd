@@ -15,6 +15,7 @@ library(googlesheets4)
 # install.packages(c("leaflet", "DT"))
 library(leaflet)
 library(DT)
+gs4_auth("florian.prive.21@gmail.com")
 ```
 
 ```{r, include=FALSE}
