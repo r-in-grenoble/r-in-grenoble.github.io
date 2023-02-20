@@ -4,11 +4,11 @@ title: "Working sessions"
 
 <!-- **Next session**: TBA -->
 
-**Next session**: Thursday January 5, 2023 @IMAG (Auditorium) at 17:30
+**Next session**: Thursday March 9, 2023 @IMAG (Auditorium) at 17:30
 
 <!-- Registration link will be posted soon. -->
 
-Registration to the event [here](https://www.eventbrite.com/e/billets-r-in-grenoble-36-data-manipulation-with-dplyr-dtplyr-and-datatable-489318463697). Attendance is totally free but **registration is mandatory** and is on a first-come, first-serve basis.
+Registration to the event [here](https://www.eventbrite.com/e/billets-r-in-grenoble-37-litterate-programming-with-rmarkdown-and-quarto-556394941247). Attendance is totally free but **registration is mandatory** and is on a first-come, first-serve basis.
 
 No Zoom this time.
 <!-- Link to Zoom [here](https://univ-grenoble-alpes-fr.zoom.us/j/93497058691?pwd=UW12OTlvM3dWOU9adkE4ZHJwbGFzdz09), for those who cannot join in-person but are still interested in seeing the talk. Please only register if you plan to attend in-person. -->
@@ -60,7 +60,11 @@ program <- tibble::tribble(
    "1/12/2022",   "Maxime JAUNATRE",                     "INRAE",                                    "Using Git with R",        "Git is a version control system independent from R, it provides a neat way to stop the spread of old scripts sent by e-mail, enhances scientific reproductibility and provides a framework to collaborate on writing code with other people. This software can be used by every R-User, within Rstudio or using a command line tool, at any step of a project or package development. This session will present the core principles when managing code files with Git, and why it may save you time when working in team. At the end of this session you will be able to use Git for saving your work and share it easily online on GitHub/GitLab.  This may even be your first step in understanding how to contribute to your most loved open-source package on GitHub/GitLab.",
     "5/1/2023", "Nicolas JOVANOVIC",                    "INSERM",     "Data manipulation with {dplyr} and {data.table}",        "The {dplyr} package is one of the core packages of the tidyverse ecosystem that provides a grammar of data manipulation with a consistent interface for working with data frames. It supports operations to filter, group, and summarize data. {dplyr} also includes functions for working with databases and can be used to efficiently manipulate large datasets. This session will focus on the {dplyr} basics, but we will also overview the {data.table} package which is usually much faster than {dplyr} and the {dtplyr} package that provides a data.table backend for dplyr.",
    "26/1/2023",     "Ronaldo SILVA", "World Health Organisation",               "Dynamic web applications with {shiny}",        NA,
-    "9/3/2023",    "Nikita GUSAROV",                      "GAEL", "Litterate programming with {Rmarkdown} and {Quarto}",        NA,
+    "9/3/2023",    "Nikita GUSAROV",                      "GAEL", "Litterate programming with {Rmarkdown} and {Quarto}",        "Markup languages allow users to bypass a lot of limitations introduced by widespread \"What you see is what you get\" (WYSIWYG) based alternatives.
+Contrary to the more sophisticated LaTeX or troff, markdown is extremely simple and easy to learn alternative with intuitive syntax.
+Combined with pandoc back-end the resulting documents may be converted to nearly any derided format possible: HTML, PDF, DOCX and many more.
+{Rmarkdown} introduces the possibility to use R, Python, C++ and other languages alongside markdown, simplifying the creation of reproducible reports and documents.
+This session will focus on {Rmarkdown} based workflow, offering as well the introduction to {Quarto}, a novel alternative for classical {Rmarkdown}.",
     "6/4/2023",     "Florian PRIVÉ",    "Aarhus University (DK)",                               "Performance of R code",        NA,
     "4/5/2023",   "Romain FRANÇOIS",                   "RStudio",                                                 "Surprise talk (TBD)",        NA,
     "1/6/2023",  "Matthieu ROLLAND", "World Health Organisation",                  "Workflow management with {targets}",        NA
