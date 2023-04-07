@@ -173,6 +173,10 @@ div(
 
 #### 2022 - 2023
 
+- Performance of R code: [slides](https://privefl.github.io/R-presentation/Rperf.html)
+
+- Litterate programming with {Rmarkdown} and {Quarto}: [slides](presentation/presentation_20220309.pdf)
+
 - Publication ready tables with {gtsummary}: [slides](http://www.danieldsjoberg.com/gtsummary-weill-cornell-presentation/), [video](https://www.youtube.com/watch?v=VUeYRfHJrHU)
 
 #### 2021 - 2022
