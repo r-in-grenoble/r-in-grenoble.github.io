@@ -15,7 +15,10 @@ library(googlesheets4)
 # install.packages(c("leaflet", "DT"))
 library(leaflet)
 library(DT)
-gs4_auth("florian.prive.21@gmail.com")
+gs4_auth(
+  email = "florian.prive.21@gmail.com",
+  scopes = "https://www.googleapis.com/auth/spreadsheets.readonly"
+)
 ```
 
 ```{r, include=FALSE}
